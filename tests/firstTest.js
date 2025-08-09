@@ -84,6 +84,9 @@ describe('Navigate commands', function () {
                 await driver.manage().window().setSize(500, 900);
                 await driver.sleep(3000);
                 attachment('Status', 'Step "Makes the google page of 500 x 900" completed successfully', 'text/plain');
+
+                const windowSize = await driver.manage().window().getSize();
+                console.log("Height : " + windowSize.height + " Width : " + windowSize.width);
             });
         } catch (e) {
             await DriverManager.takeScreenshotOnFailure(driver, e);
