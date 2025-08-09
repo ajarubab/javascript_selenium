@@ -7,3 +7,5 @@ Command to perform automation with javascript - selenium
 5. touch firstTest.js
 6. cd ..
 7. touch .gitignore
+8. To run the javascript automation script : 
+    node ./tests/firstTest.js
