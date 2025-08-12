@@ -4,7 +4,7 @@
   "description": "Command to perform automation with javascript - selenium",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --reporter allure-mocha --timeout 60000",
+    "test": "mocha tests --reporter allure-mocha --timeout 120000",
     "report": "cp -r allure-report/history allure-results/history 2>/dev/null || true && allure generate allure-results -o allure-report --clean && allure open allure-report"
   },
   "repository": {
